@@ -118,10 +118,14 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'polls',
     'django.contrib.admin',
+<<<<<<< HEAD
     'administration',
     
+=======
+>>>>>>> hop hop
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'administration'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -147,4 +151,8 @@ LOGGING = {
     }
 }
 
+<<<<<<< HEAD
 AUTH_PROFILE_MODULE = 'administration.UserProfile'
+=======
+AUTH_PROFILE_MODULE = 'administration.UserProfile'
+>>>>>>> hop hop
