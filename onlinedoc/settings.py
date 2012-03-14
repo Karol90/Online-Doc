@@ -106,7 +106,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/hinok/Desktop/Dev/Django/Online-Doc/onlinedoc/templates', # Change this to your own directory.
+    'C:/Users/Kleko/weboweWorkspace/Online-Doc/onlinedoc/templates', # Change this to your own directory.
 )
 
 INSTALLED_APPS = (
@@ -117,7 +117,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls',
-    'django.contrib.admin'
+    'django.contrib.admin',
+    'administration',
+    
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -144,3 +146,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = 'administration.UserProfile'
