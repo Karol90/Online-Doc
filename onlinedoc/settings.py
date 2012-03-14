@@ -117,10 +117,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls',
-    'django.contrib.admin'
+    'django.contrib.admin',
+    'administration'
+    
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'administration'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -144,4 +145,10 @@ LOGGING = {
             'propagate': True,
         },
     }
+}
+
+AUTH_PROFILE_MODULE = 'administration.UserProfile'
+
+DATABASE_OPTIONS = {
+    "charset": "utf8"
 }
