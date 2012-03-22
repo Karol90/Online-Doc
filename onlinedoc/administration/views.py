@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 def index(request):
     u = User.objects.get(pk=1)
-    output = 'user: '+u.get_profile().firstname
+    output = 'user: '+u.get_profile().to_string()
     return HttpResponse(output)
