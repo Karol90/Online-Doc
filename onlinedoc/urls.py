@@ -3,7 +3,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns(
-    url(r'^$', 'accounts.views.index', name='home'),
+    url(r'^', 'mainsite.views.hello'),
     # url(r'^onlinedoc/', include('onlinedoc.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -11,7 +11,6 @@ urlpatterns = patterns(
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-
 )
 
 include('messages.urls')
