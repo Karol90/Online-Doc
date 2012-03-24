@@ -1,3 +1,4 @@
+*.pyc
 .metadata
-.settings
+.settings/
 settings.py
