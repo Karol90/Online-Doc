@@ -3,14 +3,15 @@
 {% block title %}Kupa{% endblock %}
 
 {% block header %}
-Strona główna
+Inna strona kurwa
 {% endblock %}
 
 {% block content %}
 
-	Duża kupa z tego django <br>
+wyświetlanie użytkownika: <br />
 
-	link do innej strony: <a href="{% url link1 %}">kupa link1</a>
+{{ user_tostring }}
+
 
 {% endblock %}
 

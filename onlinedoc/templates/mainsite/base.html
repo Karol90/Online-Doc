@@ -5,8 +5,20 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    {% block content %}{% endblock %}
-    {% block footer %}
-    {% endblock %}
+	<div id="header">
+		<div class="centerDiv">
+			{% block header %}{% endblock %}
+			</div>
+	</div>
+	<div id="content">
+		<div class="centerDiv">
+		{% block content %}{% endblock %}
+		</div>
+	</div>
+	<div id="footer">
+		<div class="centerDiv">
+	    {% block footer %}{% endblock %}
+	    </div>
+	</div>
 </body>
 </html>
