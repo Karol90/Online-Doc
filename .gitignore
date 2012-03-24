@@ -1,6 +1,18 @@
+# OS generated files #
+######################
+.DS_Store*
+enthumbs.db
+Thumbs.db
+Icon?
+
+# Files #
+#########
 .project
 .pydevproject
 *.pyc
-.metadata
-.settings/
 settings.py
+
+# Folders #
+###########
+.settings/
+.metadata/
