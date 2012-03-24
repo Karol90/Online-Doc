@@ -1,7 +1,6 @@
-#trolololo
-#majtki w paski
-
 from django.contrib import admin
-from administration.models import UserProfile
+from accounts.models import Account, Doctor, Patient
 
-admin.site.register(UserProfile)
+admin.site.register(Account)
+admin.site.register(Patient)
+admin.site.register(Doctor)
