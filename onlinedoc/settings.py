@@ -1,3 +1,5 @@
+import os.path
+
 # Django settings for onlinedoc project.
 
 DEBUG = True
@@ -107,6 +109,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     #'/Users/hinok/Desktop/Dev/Django/Online-Doc/onlinedoc/templates', # Change this to your own directory.
+    os.path.join(os.path.dirname(__file__), 'templates'),
 )
 
 INSTALLED_APPS = (
