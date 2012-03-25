@@ -1,0 +1,36 @@
+body 
+{
+	background-color: #fefefe;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header
+{
+	margin:0px;
+	padding: 0px;
+	background-color: #DDD;
+	height:100px;
+}
+
+#content
+{
+	margin:0px;
+	padding: 0px;
+	background-color: #EEE;
+	height:300px;
+}
+
+#footer
+{
+	margin:0px;
+	padding: 0px;
+	background-color: #AAA;
+	height:100px;
+}
+
+.centerDiv
+{
+	margin: 0px auto;
+	width:800px;
+}
