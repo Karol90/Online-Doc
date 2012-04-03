@@ -1,16 +1,23 @@
 {% extends 'mainsite/base.html' %}
 
-{% block title %}Kupa{% endblock %}
+{% block title %}Online doc{% endblock %}
 
 {% block header %}
 Strona główna
 {% endblock %}
 
 {% block content %}
-
-	Duża kupa z tego django <br>
-
-	link do innej strony: <a href="{% url link1 %}">kupa link1</a>
+<br>
+<ul>
+	{{ user }}
+	{% if user.is_authenticated %}
+	<li><a href="{% url logout %}">wyloguj</a></li>
+	{% else %}
+	<li><a href="{% url login %}">zaloguj</a></li>
+	{% endif %}
+	<li><a href="{% url register %}">zarejestruj</a></li>
+	<li><a href="{% url profile %}">profil</a></li>
+</ul>
 
 {% endblock %}
 
