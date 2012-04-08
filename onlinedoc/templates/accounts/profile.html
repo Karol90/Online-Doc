@@ -1,0 +1,20 @@
+{% extends "mainsite/base.html" %}
+
+{% block title %}Online doc{% endblock %}
+
+{% block header %}
+profil
+{% endblock %}
+
+{% block content %}
+
+{{ user.firstname }}<br>
+{{ user.lastname }}<br>
+{{ user.address }}<br>
+{{ user.city }}<br>
+{{ user.postalcode }}<br>
+{{ user.nip }}<br>
+{{ user.pesel }}<br>
+{{ user.birth_date }}<br>
+
+{% endblock %}

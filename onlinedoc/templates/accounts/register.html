@@ -9,11 +9,14 @@ rejestracja
 {% block content %}
   <h1>Create an account</h1>
 
-  <form action="" method="post">
-  		{% csrf_token %}
-      	{{ form.as_p }}
+  {{ error }}
+	<form action="" method="post">
+  		<table>
+  			{{ user_form.as_table }}
+  			{{ account_form.as_table }}
+  		</table>
   		<input type="submit" value="Create the account">
-  </form>
+	</form>
 {% endblock %}
 
 {% block footer %}
