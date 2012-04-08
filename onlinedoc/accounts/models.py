@@ -3,6 +3,13 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+"""
+@todo   Czy nie lepiej byłoby przenieść dane z Account do modeli Patient i Doctor?
+        Może dzięki temu dodawanie kont w Django byłoby bardzien intuicyjne?
+        (Nie trzeba byłoby tworzyć User i Account, aby stworzyć Lekarza lub Pacjenta).
+        
+        Dawid
+"""
 class Account(models.Model):
     # Old way
     # user = models.ForeignKey(User, unique=True)
