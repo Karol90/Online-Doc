@@ -1,0 +1,20 @@
+1. szablon
+2. dodać tabele z jakimiś ustawieniami? (myślę np o ustawieniu terminu wygaśnięcia maila aktywacyjnego)
+3. validacja formularzy js/ajax
+4. rejstracja
+	- data urodzenia. dodanie kalendarza w js albo zmiana na dzień:_ miesiąc:_ rok:_
+	- obsługa błędów
+	- użycie transakcji ?? https://docs.djangoproject.com/en/dev/topics/db/transactions/
+	- zmienić losowanie klucza aktywacyjnego. ja robiłem tak jak jest na tej stronce: 
+		http://www.błędów-list.org/weblog/2006/sep/02/django-tips-user-registration/
+	- zmienić wklejanie linku na uzależnione od urls'ów
+	- co jak minie czas na rejestracje? ;D nie ma tego obsłużonego. powinno chyba usuwać użytkownika i pozwolić na ponowną rejestrację. albo wysłać od nowa maila?... do zrobienia.
+	- obsługa błędów w register_activation_view
+5. email
+	- zmienić podstawowy szablon
+	- wysyłanie maila jest ustawione za pomocą konta google ;/ nie działa mi na podstawowych ustawieniach i nie wiem czemu. login i hasło podane w settings
+6. zabić sie za to że:
+	- true/false w pythonie pisze się wielką literą True/False
+	- syncdb nie wykrywa zmiany modelu | update: zrobie to ręcznie ;( a później pójdę się zabić...
+	- 
+7. Jeżeli pacjent nie będzie miał zadnych dodatkowych pól to go wywalić, bo po co rozszerzać jak nic nie dodaje a w bazie jest tabela zawierająca account_id ... W aktualnej rejestracji nie dodaje pacjenta, tworzone jest tylko samo konto. Zakładam że konta lekarzom będzie dodawał admin.

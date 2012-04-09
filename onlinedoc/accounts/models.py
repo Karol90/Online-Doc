@@ -11,15 +11,17 @@ class Account(models.Model):
     user = models.OneToOneField(User)
     
     # Fields
-    firstname = models.CharField(max_length=20)
-    lastname = models.CharField(max_length=20)
-    address = models.TextField(max_length=100)
-    city = models.CharField(max_length=20)
-    postalcode = models.CharField(max_length=10)
-    country = models.CharField(max_length=20, null=True, blank=True)
-    pesel = models.CharField(max_length=11)
-    nip = models.CharField(max_length=10)
-    birth_date = models.DateField(null=True, blank=True)
+    firstname = models.CharField(max_length=20, verbose_name='Imię')
+    lastname = models.CharField(max_length=20, verbose_name='Nazwisko')
+    address = models.TextField(max_length=100, verbose_name='Adres')
+    city = models.CharField(max_length=20, verbose_name='Miejscowość')
+    postalcode = models.CharField(max_length=10, verbose_name='Kod pocztowy')
+    country = models.CharField(max_length=20, null=True, blank=True, verbose_name='Kraj')
+    pesel = models.CharField(max_length=11, verbose_name='PESEL')
+    nip = models.CharField(max_length=10, verbose_name='NIP')
+    birth_date = models.DateField(null=True, blank=True, verbose_name='Data urodzenia')
+    activation_key = models.CharField(max_length=40, null=True, blank=True)
+    key_expires = models.DateTimeField(null=True, blank=True)
     
     # __unicode__ is toString() in Java
     def __unicode__(self):
@@ -38,8 +40,8 @@ class Patient(Account):
         
 class Doctor(Account):
     account = models.OneToOneField(Account)
-    title = models.CharField(max_length=10, null=True, blank=True)
-    bio = models.TextField(null=True, blank=True)
+    title = models.CharField(max_length=10, null=True, blank=True, verbose_name='Tytuł')
+    bio = models.TextField(null=True, blank=True, verbose_name='Biografia??')
     
     class Meta: 
         verbose_name = "Lekarz"
