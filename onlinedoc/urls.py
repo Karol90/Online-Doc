@@ -14,9 +14,10 @@ urlpatterns = patterns('',
     # Account
     url(r'^acc/$', 'accounts.views.acc', name='link1'),
     url(r'^accounts/login/$', 'accounts.views.login_view', name='login'),
-    url(r'^accounts/logout/$', 'accounts.views.logout', name='logout'),
-    url(r'^accounts/register/$', 'accounts.views.register', name='register'),
-    url(r'^accounts/profile/$', 'accounts.views.profile', name='profile'),
+    url(r'^accounts/logout/$', 'accounts.views.logout_view', name='logout'),
+    url(r'^accounts/register/$', 'accounts.views.register_view', name='register'),
+    url(r'^accounts/profile/$', 'accounts.views.profile_view', name='profile'),
+    url(r'^accounts/activation/$', 'accounts.views.register_activation_view'),
     # url(r'^onlinedoc/', include('onlinedoc.foo.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
