@@ -1,16 +1,23 @@
 {% extends 'mainsite/base.html' %}
 
-{% block title %}Online Doc{% endblock %}
+{% block title %}Online doc{% endblock %}
 
 {% block header %}
 Strona główna
 {% endblock %}
 
 {% block content %}
-
-	Nagłówek<br>
-
-	Strona wwww: <a href="{% url link1 %}">przykładowy link</a>
+<br>
+<ul>
+	{{ user }}
+	{% if user.is_authenticated %}
+	<li><a href="{% url logout %}">wyloguj</a></li>
+	{% else %}
+	<li><a href="{% url login %}">zaloguj</a></li>
+	{% endif %}
+	<li><a href="{% url register %}">zarejestruj</a></li>
+	<li><a href="{% url profile %}">profil</a></li>
+</ul>
 
 {% endblock %}
 

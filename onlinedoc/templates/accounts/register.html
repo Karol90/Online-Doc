@@ -1,0 +1,24 @@
+{% extends 'mainsite/base.html' %}
+
+{% block title %}Online doc{% endblock %}
+
+{% block header %}
+rejestracja
+{% endblock %}
+
+{% block content %}
+  <h1>Create an account</h1>
+
+  {{ error }}
+	<form action="" method="post">
+  		<table>
+  			{{ user_form.as_table }}
+  			{{ account_form.as_table }}
+  		</table>
+  		<input type="submit" value="Create the account">
+	</form>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

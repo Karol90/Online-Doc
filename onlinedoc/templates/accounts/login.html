@@ -1,0 +1,17 @@
+{% extends "mainsite/base.html" %}
+
+{% block content %}
+
+<div id="login">
+	{{ error }}<br>
+	<form method="post" action=".">
+		<!-- przepisać na własną tabele z errorami -->
+	<table>
+	{{ form.as_table }}
+	</table>
+
+	<input type="submit" value="Zaloguj" />
+	<input type="hidden" name="next" value="{{ next }}" />
+	</form>
+</div>
+{% endblock %}
