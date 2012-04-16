@@ -1,6 +1,14 @@
 1. szablon
+@Dawid: Robi się
+-------------------------------
 2. dodać tabele z jakimiś ustawieniami? (myślę np o ustawieniu terminu wygaśnięcia maila aktywacyjnego)
+@Dawid: Jestem za. Można zastosować rozwiązanie z Wordpress.
+Czyli options: option_id, option_name, option_value 
+-------------------------------
 3. validacja formularzy js/ajax
+@Dawid: Spoko, skorzystamy z jquery-validation.
+Walidacja ajaxowa to jedynie przy rejestracji.
+-------------------------------
 4. rejstracja
 	- data urodzenia. dodanie kalendarza w js albo zmiana na dzień:_ miesiąc:_ rok:_
 	- obsługa błędów
@@ -10,11 +18,18 @@
 	- zmienić wklejanie linku na uzależnione od urls'ów
 	- co jak minie czas na rejestracje? ;D nie ma tego obsłużonego. powinno chyba usuwać użytkownika i pozwolić na ponowną rejestrację. albo wysłać od nowa maila?... do zrobienia.
 	- obsługa błędów w register_activation_view
+-------------------------------
 5. email
 	- zmienić podstawowy szablon
 	- wysyłanie maila jest ustawione za pomocą konta google ;/ nie działa mi na podstawowych ustawieniach i nie wiem czemu. login i hasło podane w settings
+-------------------------------
 6. zabić sie za to że:
 	- true/false w pythonie pisze się wielką literą True/False
 	- syncdb nie wykrywa zmiany modelu | update: zrobie to ręcznie ;( a później pójdę się zabić...
 	- 
+@Dawid: :D:D:D:D:D
+-------------------------------
 7. Jeżeli pacjent nie będzie miał zadnych dodatkowych pól to go wywalić, bo po co rozszerzać jak nic nie dodaje a w bazie jest tabela zawierająca account_id ... W aktualnej rejestracji nie dodaje pacjenta, tworzone jest tylko samo konto. Zakładam że konta lekarzom będzie dodawał admin.
+-------------------------------
+@Dawid: Taa, też o tym myślałem wcześniej jak to wszystko tworzyłem, ale wtedy, gdy np. będziesz chciał dodać kolejne pole pacjentom, a w przyszłości dodać sobie pielęgniarki w mini to będzie problem :)
+Niemniej na potrzeby naszego projektu, możemy to pozmieniać?
