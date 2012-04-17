@@ -39,3 +39,29 @@ h1,h2,h3,h4
 	margin: 0px auto;
 	width:800px;
 }
+
+/*
+calendar
+*/
+div.day
+{
+	width:100px;
+	height:100px;
+	background-color: #e1e1e1;
+	margin:2px;
+}
+
+span.day_number
+{
+	color: #777;
+	font-style: italic;
+	position: absolute;
+}
+
+div.day.worktime
+{
+	background-color: #3f3;
+	
+	width:100px;
+	height:100px;
+}

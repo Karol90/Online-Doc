@@ -1,6 +1,8 @@
 # coding=utf-8
+
 from django.db import models
 from accounts.models import Doctor
+from django.utils.encoding import smart_unicode
 
 class Worktime(models.Model):
     start_time = models.TimeField()
@@ -25,7 +27,11 @@ class Worktime(models.Model):
                    )
     day = models.IntegerField(choices=DAY_CHOICES, default=MONDAY)
     
+    # zmienić na doctor zamiast doctor_id bo w bazie wyglada doctor_id_id
     doctor_id = models.ForeignKey(Doctor)
+    
+    def __unicode__(self):
+        return self.doctor_id.account.user.username + u' '+ smart_unicode(self.day) + u': (' + smart_unicode(self.start_time) + " - " + smart_unicode(self.end_time) + u')'
     
 class WorktimeExclusions(models.Model):
     start_time = models.DateTimeField()

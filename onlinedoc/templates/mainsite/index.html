@@ -18,6 +18,9 @@ Strona główna
 	<li><a href="{% url register %}">zarejestruj</a></li>
 	{% endif %}
 </ul>
+<br>
+{% render_monthly_calendar 2010 3 'None' %}
+
 
 {% endblock %}
 

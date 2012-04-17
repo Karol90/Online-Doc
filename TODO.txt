@@ -30,6 +30,7 @@ Walidacja ajaxowa to jedynie przy rejestracji.
 @Dawid: :D:D:D:D:D
 -------------------------------
 7. Jeżeli pacjent nie będzie miał zadnych dodatkowych pól to go wywalić, bo po co rozszerzać jak nic nie dodaje a w bazie jest tabela zawierająca account_id ... W aktualnej rejestracji nie dodaje pacjenta, tworzone jest tylko samo konto. Zakładam że konta lekarzom będzie dodawał admin.
--------------------------------
+
 @Dawid: Taa, też o tym myślałem wcześniej jak to wszystko tworzyłem, ale wtedy, gdy np. będziesz chciał dodać kolejne pole pacjentom, a w przyszłości dodać sobie pielęgniarki w mini to będzie problem :)
 Niemniej na potrzeby naszego projektu, możemy to pozmieniać?
+-------------------------------

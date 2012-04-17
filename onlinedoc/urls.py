@@ -6,13 +6,13 @@ admin.autodiscover()
 
 """
 D: Zamiana mainsite na frontpage?
+K: dobry pomysl xP
 """
 urlpatterns = patterns('',
     # Home page
     url(r'^$', 'mainsite.views.index', name='home'),
     
     # Account
-    url(r'^acc/$', 'accounts.views.acc', name='link1'),
     url(r'^accounts/login/$', 'accounts.views.login_view', name='login'),
     url(r'^accounts/logout/$', 'accounts.views.logout_view', name='logout'),
     url(r'^accounts/register/$', 'accounts.views.register_view', name='register'),

@@ -18,11 +18,6 @@ from django.template.loader import get_template
 from django.template import Context
 from django.core.mail.message import EmailMessage
 
-@login_required
-def acc(request):
-    user_tostring = User.objects.get(pk=1)
-    return render_to_response('mainsite/inna.html', locals())
-
 @csrf_exempt
 def login_view(request):
     def errorHandle(error, form):
