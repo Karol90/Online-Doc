@@ -1,0 +1,17 @@
+{% extends 'mainsite/base.html' %} 
+
+{% block content %} 
+
+{% if success %}
+	{% if expired %}
+		Nie trochę za późno na aktywację, hmm?
+	{% else %}
+		Witaj {{ user }} <br>
+		Twoje konto zostało aktywowane. <br>
+		<a href="{{ login_link }}">zaloguj się</a>
+	{% endif %}
+{% else %}
+Błąd! Sprawdź poprawność linku aktywacyjnego lub skontaktuj się z administratorem.
+{% endif %}
+
+{% endblock %}
