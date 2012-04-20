@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'visits',
     'workplaces',
     'worktimes',
+    'visits_calendar',
     #'messages', #django-messages application
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',

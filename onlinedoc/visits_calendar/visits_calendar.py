@@ -12,6 +12,10 @@ class VisitsCalendar(HTMLCalendar):
     
     def __init__(self, doctor):
         super(VisitsCalendar, self).__init__()
+        
+        if doctor==None:
+            doctor = Doctor.objects.all()[:1]
+        
         self.worktimes = Worktime.objects.filter(doctor_id=doctor)
 
     def formatday(self, day, weekday):

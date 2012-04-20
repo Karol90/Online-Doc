@@ -18,6 +18,10 @@ urlpatterns = patterns('',
     url(r'^accounts/register/$', 'accounts.views.register_view', name='register'),
     url(r'^accounts/profile/$', 'accounts.views.profile_view', name='profile'),
     url(r'^accounts/activation/$', 'accounts.views.register_activation_view'),
+    # Calendar
+    url(r'^calendar/monthly/$', 'visits_calendar.views.monthly_calendar', name='monthly_calendar'),
+    
+    
     # url(r'^onlinedoc/', include('onlinedoc.foo.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
